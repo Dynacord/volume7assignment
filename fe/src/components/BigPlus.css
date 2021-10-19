@@ -1,0 +1,40 @@
+.circle {
+    --circle_diameter: 100px;
+    --circle_color: grey;
+    --circle_radius: 30px;
+    --cross_length: 70%;
+    --cross_height: 10%;
+    --cross_color: white;
+    background-color: var(--circle_color);
+    border-radius: var(--circle_radius);
+    width: var(--circle_diameter);
+    height: var(--circle_diameter);
+    
+    position: relative;
+  }
+  
+  .circle .vertical_bar {
+    height: var(--cross_length);
+    width: var(--cross_height);
+    background-color: var(--cross_color);
+    border-radius: inherit
+  }
+  
+  .circle .vertical_bar.centered {
+    position: absolute;
+    left: calc(50% - calc(var(--cross_height) / 2));
+    top: calc(50% - calc(var(--cross_length) / 2))
+  }
+  
+  .circle .horizontal_bar {
+    height: var(--cross_height);
+    width: var(--cross_length);
+    background-color:  var(--cross_color);
+    border-radius: inherit
+  }
+  
+  .circle .horizontal_bar.centered {
+    position: absolute;
+    left: calc(50% - calc(var(--cross_length) / 2));
+    top: calc(50% - calc(var(--cross_height) / 2))
+  }

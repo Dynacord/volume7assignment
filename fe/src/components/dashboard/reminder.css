@@ -1,0 +1,52 @@
+.reminder_card {
+    display: flex;
+    width: 250px;
+    flex-direction: column;
+    gap: 10px;
+    min-height: 140px;
+    justify-content: center;
+}
+
+.reminder_card .reminder_card_header {
+    padding-bottom: 0
+}
+
+.reminder_card .reminder_card_content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reminder_card .button_container {
+    display: flex;
+    justify-content: 'flex-end';
+    align-items: center;
+    gap: 10px;
+}
+
+.reminder_list {
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    padding: 0 10px;
+    overflow-y: auto;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.reminder_card:last-child {
+    margin-right: auto;
+}
+
+.reminder_card_content:last-child {
+    padding-bottom: 16px;
+}
+
+.big_plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

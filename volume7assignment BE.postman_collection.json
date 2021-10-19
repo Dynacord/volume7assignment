@@ -1,0 +1,522 @@
+{
+	"info": {
+		"_postman_id": "33566bd7-8c3b-4678-a698-cdf9b72b46aa",
+		"name": "volume7assignment BE",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Reminders",
+			"item": [
+				{
+					"name": "/reminders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmM3YTYxMy0yYmJjLTQ2MDEtOTJhNy05N2I3Mjg2MDZkM2UiLCJpYXQiOjE2MzQyNjU2NTEsImV4cCI6MTYzNDM1MjA1MX0.v9XOxGfh0DqAzhRltaNTtqAgosUgj1jXK1Ht1DzdnV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/reminders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"reminders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/reminders",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNDQ1YzVjOS00ZTA4LTRmZjItYjk5MS05NmMxMGQwMjY4YTIiLCJpYXQiOjE2MzQ2MDk1MTMsImV4cCI6MTYzNDY5NTkxM30.oTLa41EU0_duvtSaFiYbYaoMkVU5x839SYaRVynumdQ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"I think you did it! Here's an extra reminder to commemorate the event\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/reminders",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"reminders"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/reminders/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmM3YTYxMy0yYmJjLTQ2MDEtOTJhNy05N2I3Mjg2MDZkM2UiLCJpYXQiOjE2MzQyNjU2NTEsImV4cCI6MTYzNDM1MjA1MX0.v9XOxGfh0DqAzhRltaNTtqAgosUgj1jXK1Ht1DzdnV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PATCH",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"content\": \"This is the updated content of a reminder.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/reminders/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"reminders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "45bc17c6-81cf-4581-9332-c6243011988f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/reminders/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxNmFlZjFlNy0zMGEzLTQxNzgtYjFhNi1iYmE2ZTNjOGM3NTMiLCJpYXQiOjE2MzQyNjk0NTMsImV4cCI6MTYzNDM1NTg1M30.v8A_0bgMMg-JSefTU0CsWmiBWavNB-R6yEtrJUjrqxM",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/reminders/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"reminders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "45bc17c6-81cf-4581-9332-c6243011988f"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/reminders/:id",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmM3YTYxMy0yYmJjLTQ2MDEtOTJhNy05N2I3Mjg2MDZkM2UiLCJpYXQiOjE2MzQyNjU2NTEsImV4cCI6MTYzNDM1MjA1MX0.v9XOxGfh0DqAzhRltaNTtqAgosUgj1jXK1Ht1DzdnV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/reminders/:id",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"reminders",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "45bc17c6-81cf-4581-9332-c6243011988f"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Authentication",
+			"item": [
+				{
+					"name": "/sso",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGExZjRmYy1iMmRkLTQ4NGYtYWQwMC0yZTZlYjc1ODhmMGYiLCJpYXQiOjE2MzQyNzAwODAsImV4cCI6MTYzNDM1NjQ4MH0.XB4f2lfr6TGpx4ec5013XrrQhYfSv_kAGWrgIcB-f6s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/sso",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"sso"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/refresh",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI4OGExZjRmYy1iMmRkLTQ4NGYtYWQwMC0yZTZlYjc1ODhmMGYiLCJpYXQiOjE2MzQyNzAwODAsImV4cCI6MTYzNDM1NjQ4MH0.XB4f2lfr6TGpx4ec5013XrrQhYfSv_kAGWrgIcB-f6s",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3001/refresh",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"refresh"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/signup",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"m.jalbertclaveau@gmail.com\",\r\n    \"password\": \"123456\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/signup",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"signup"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test1@test.com\",\r\n    \"password\": \"123456\"\r\n}"
+						},
+						"url": {
+							"raw": "http://localhost:3001/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/logout",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmM3YTYxMy0yYmJjLTQ2MDEtOTJhNy05N2I3Mjg2MDZkM2UiLCJpYXQiOjE2MzQyNjU2NTEsImV4cCI6MTYzNDM1MjA1MX0.v9XOxGfh0DqAzhRltaNTtqAgosUgj1jXK1Ht1DzdnV4",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Cookie",
+								"value": "SESSION=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmMmM3YTYxMy0yYmJjLTQ2MDEtOTJhNy05N2I3Mjg2MDZkM2UiLCJpYXQiOjE2MzQyNjU2NTEsImV4cCI6MTYzNDM1MjA1MX0.v9XOxGfh0DqAzhRltaNTtqAgosUgj1jXK1Ht1DzdnV4;",
+								"type": "text",
+								"disabled": true
+							}
+						],
+						"url": {
+							"raw": "http://localhost:3001/logout",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"logout"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/forgot",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\": \"test@test.com\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/forgot",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"forgot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/reset",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI1OTQ2ZTg0LTQ3NmItNGExNy1hOTJkLTdkZGU3ZjExYzFlMCIsImlhdCI6MTYzNDM2NTIxNCwiZXhwIjoxNjM0MzY4ODE0fQ.QNl_tdu2k8yZBpRdJ9YvOt3wjQxUQYJMnuTuO86lOTo",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"password\": \"1234qweR!\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3001/reset",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3001",
+							"path": [
+								"reset"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "/sendMail",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/sendMail",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"sendMail"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/activate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"delay\": 180000\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:3001/start",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"start"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "/stop",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:3001/stop",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "3001",
+					"path": [
+						"stop"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
