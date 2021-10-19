@@ -423,7 +423,7 @@ function sendBatch() {
     }
 }
 
-app.post('/sendMail', (req, res) => {
+app.get('/sendMail', (req, res) => {
     try {
         sendBatch()
     } catch (err) {
