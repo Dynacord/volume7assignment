@@ -52,7 +52,7 @@
 							"bearer": [
 								{
 									"key": "token",
-									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJmNDQ1YzVjOS00ZTA4LTRmZjItYjk5MS05NmMxMGQwMjY4YTIiLCJpYXQiOjE2MzQ2MDk1MTMsImV4cCI6MTYzNDY5NTkxM30.oTLa41EU0_duvtSaFiYbYaoMkVU5x839SYaRVynumdQ",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NzEyNzE0Yi00MDc0LTQ1M2UtOWE2OS1lMWU4NmNiNjhmZjciLCJpYXQiOjE2MzQ2MTU5MjEsImV4cCI6MTYzNDcwMjMyMX0.Yyq393_t8OUiwyEx4YZ_ew3DBA0XjtA4a72wClxU7VI",
 									"type": "string"
 								}
 							]
@@ -332,7 +332,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"email\": \"test1@test.com\",\r\n    \"password\": \"123456\"\r\n}"
+							"raw": "{\r\n    \"email\": \"test@test.com\",\r\n    \"password\": \"1234qweR\"\r\n}"
 						},
 						"url": {
 							"raw": "http://localhost:3001/login",
@@ -455,7 +455,7 @@
 		{
 			"name": "/sendMail",
 			"request": {
-				"method": "POST",
+				"method": "GET",
 				"header": [],
 				"url": {
 					"raw": "http://localhost:3001/sendMail",
@@ -472,7 +472,7 @@
 			"response": []
 		},
 		{
-			"name": "/activate",
+			"name": "/start",
 			"request": {
 				"method": "POST",
 				"header": [],
